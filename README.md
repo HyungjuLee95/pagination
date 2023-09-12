@@ -89,3 +89,67 @@ public class PageHelper {
 
 ```
 
+### 동작
+
+```
+memberId = 3
+{
+  "page": 0,
+  "size": 2,
+  "sort": [
+    "createdDate"
+  ]
+}
+
+```
+위 정보를 주입하게 되면 memberId=3에 해당하는 data를 size(2개)에 맞는 페이지를 보여주게된다.<br>
+
+```
+
+{
+  "content": [
+    {
+      "id": 2001107,
+      "memberId": 3,
+      "contents": "R",
+      "createdDate": "2023-08-03",
+      "createdAt": "2023-09-05T00:55:45"
+    },
+    {
+      "id": 2001109,
+      "memberId": 3,
+      "contents": "eqNLQZf",
+      "createdDate": "2023-08-03",
+      "createdAt": "2023-08-03T19:10:56"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 2,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": false,
+  "totalPages": 1500511,
+  "totalElements": 3001022,
+  "size": 2,
+  "number": 0,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": true,
+  "numberOfElements": 2,
+  "empty": false
+}
+
+```
+
+
